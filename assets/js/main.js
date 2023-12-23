@@ -85,4 +85,13 @@ sr.reveal('.contact__button', {delay: 600})
 
 
 
+/* ===== Get the current year in your website ===== */
+const yearElement = document.querySelector('#year');
 
+function displayYear() {
+    const currentYear = new Date().getFullYear();
+    yearElement.innerHTML = currentYear;
+}
+
+/* === Call the function to display the current year === */
+displayYear();
